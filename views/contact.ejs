@@ -1,0 +1,49 @@
+<%- include partials/header %>
+ <%- include partials/main_nav.ejs %>
+ <section class="Contact">
+    <br />
+    <h1>Contact Me</h1>
+
+    <form>
+      <fieldset>
+        <br />
+        <div class="box">
+          First Name: <input type="text" name="username" required />
+          <!---For user to Input First Name-->
+        </div>
+        <br />
+        <div class="box">
+          Last Name:<input type="text" name="lastname" required />
+          <!---For user to Input Last Name-->
+        </div>
+        <br />
+        <div class="box">
+          Gender :<input type="radio" name="Gender" value="Male" required />Male
+          <!---For user to Choose Gender-->
+          <input type="radio" name="Gender" value="Female" required />Female
+        </div>
+        <br />
+        <div class="box">
+          Email: <input type="email" name="email" required />
+          <!---For user to input email address-->
+        </div>
+        <br />
+        <div class="box">
+          Phone Number: <input type="text" name="phone" required />
+          <!---For user to Input Phone Number-->
+        </div>
+        <br />
+        <div class="box">
+          Comments: <input type="text" name="message" required />
+          <!---For user to Input Comments-->
+        </div>
+        <br />
+        <div class="button">
+          <input type="Submit" name="Submit" value="Submit" />
+          <!---For user to submit Form-->
+        </div>
+      </fieldset>
+    </form>
+  </section>
+<%- include partials/bottom_nav.ejs %>
+  <%- include partials/footer.ejs %>
